@@ -41,8 +41,8 @@ class Song
   end
 
   def self.alphabetical
-    temp = @@all.sort_by { |song| song.name[0] }
-    temp
+    songs = @@all.sort_by { |song| song.name[0] }
+    songs
   end
 
   def self.new_from_filename(filename)
