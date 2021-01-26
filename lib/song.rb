@@ -41,7 +41,7 @@ class Song
   end
 
   def self.alphabetical
-    temp = @@all.sort
+    temp = @@all.sort_by { |song| song.name[0] }
     temp
   end
 
